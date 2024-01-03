@@ -123,7 +123,7 @@ DarkRP.createEntity("Drug lab", {
     price = 400,
     max = 3,
     cmd = "buydruglab",
-    allowed = {TEAM_GANG, TEAM_MOB}
+    allowed = {}
 })
 
 DarkRP.createEntity("Money printer", {

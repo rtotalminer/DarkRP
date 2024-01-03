@@ -47,7 +47,7 @@ GM.Config.canforcedooropen              = true
 GM.Config.chatsounds                    = true
 -- chiefjailpos - Allow the Chief to set the jail positions.
 GM.Config.chiefjailpos                  = true
--- cit_propertytax - Enable/disable property tax that is exclusive only for citizens.
+-- cit_propertytax - Enable/disable property tax that is exclusive only for civlians.
 GM.Config.cit_propertytax               = false
 -- copscanunfreeze - Enable/disable the ability of cops to unfreeze other people's props.
 GM.Config.copscanunfreeze               = true
@@ -143,7 +143,7 @@ GM.Config.removeclassitems              = true
 GM.Config.removeondisconnect            = true
 -- respawninjail - Enable/disable whether people can respawn in jail when they die.
 GM.Config.respawninjail                 = true
--- restrictallteams - Enable/disable Players can only be citizen until an admin allows them.
+-- restrictallteams - Enable/disable Players can only be civlian until an admin allows them.
 GM.Config.restrictallteams              = false
 -- restrictbuypistol - Enabling this feature makes /buy available only to Gun Dealers.
 GM.Config.restrictbuypistol             = false
@@ -386,43 +386,8 @@ GM.Config.DefaultWeapons = {
 -- Make sure the category is created in the darkrp_customthings/categories.lua, otherwise it won't work!
 GM.Config.CategoryOverride = {
     jobs = {
-        ["Citizen"]                             = "Citizens",
-        ["Hobo"]                                = "Citizens",
-        ["Gun Dealer"]                          = "Citizens",
-        ["Medic"]                               = "Citizens",
-        ["Civil Protection"]                    = "Civil Protection",
-        ["Gangster"]                            = "Gangsters",
-        ["Mob boss"]                            = "Gangsters",
-        ["Civil Protection Chief"]              = "Civil Protection",
-        ["Mayor"]                               = "Civil Protection",
-    },
-    entities = {
-        ["Drug lab"]                            = "Other",
-        ["Money printer"]                       = "Other",
-        ["Gun lab"]                             = "Other",
-
-    },
-    shipments = {
-        ["AK47"]                                = "Rifles",
-        ["MP5"]                                 = "Rifles",
-        ["M4"]                                  = "Rifles",
-        ["Mac 10"]                              = "Other",
-        ["Pump shotgun"]                        = "Shotguns",
-        ["Sniper rifle"]                        = "Snipers",
-
-    },
-    weapons = {
-        ["Desert eagle"]                        = "Pistols",
-        ["Fiveseven"]                           = "Pistols",
-        ["Glock"]                               = "Pistols",
-        ["P228"]                                = "Pistols",
-    },
-    vehicles = {}, -- There are no default vehicles.
-    ammo = {
-        ["Pistol ammo"]                         = "Other",
-        ["Shotgun ammo"]                        = "Other",
-        ["Rifle ammo"]                          = "Other",
-    },
+        ["Civilian"]                             = "Civilian"
+    }
 }
 
 -- The list of weapons admins spawn with, in addition to the default weapons, a job's weapons and GM.Config.AdminsCopWeapons.
@@ -432,9 +397,6 @@ GM.Config.AdminWeapons = {
 
 -- These are the default laws, they're unchangeable in-game.
 GM.Config.DefaultLaws = {
-    "Do not attack other citizens except in self-defence.",
-    "Do not steal or break into people's homes.",
-    "Money printers/drugs are illegal.",
 }
 
 GM.Config.PocketBlacklist = {
@@ -502,7 +464,7 @@ GM.Config.hideNonBuyable = false
 
 -- Hide only the items that you have the wrong job for (or for which the customCheck says no).
 -- When you set this option to true and hideNonBuyable to false, you WILL see e.g. items that are too expensive for you to buy.
--- but you won't see gundealer shipments when you have the citizen job.
+-- but you won't see gundealer shipments when you have the civlian job.
 GM.Config.hideTeamUnbuyable = true
 
 --[[---------------------------------------------------------------------------

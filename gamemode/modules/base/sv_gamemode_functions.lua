@@ -1093,7 +1093,7 @@ function GM:loadCustomDarkRPItems()
         GAMEMODE.DefaultTeam = next(RPExtraTeams)
 
         local hints = {
-            "This may happen when you disable the default citizen job. Make sure you update GAMEMODE.DefaultTeam to the new default team.",
+            "This may happen when you disable the default civilian job. Make sure you update GAMEMODE.DefaultTeam to the new default team.",
             "GAMEMODE.DefaultTeam may be set to a job that does not exist anymore. Did you remove the job you had set to default?",
             "The error being in jobs.lua is a guess. This is usually right, but the problem might lie somewhere else."
         }

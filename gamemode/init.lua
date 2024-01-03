@@ -66,7 +66,6 @@ resource.AddFile("materials/vgui/entities/weaponchecker.vmt")
 
 hook.Call("DarkRPPreLoadModules", GM)
 
-
 --[[---------------------------------------------------------------------------
 Loading modules
 ---------------------------------------------------------------------------]]

@@ -1,11 +1,11 @@
 "darkrp"
 {
     "base"          "sandbox"
-    "title"         "DarkRP"
+    "title"         "WW1RP"
     "version"       "2.7.0"
     "category"      "rp"
     "menusystem"    "1"
-    "workshopid"    "248302805"
+    "workshopid"    ""
 
     "author_name"   "FPtje Falco et al."
     "author_email"  ""
